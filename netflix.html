@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+		<meta charset="UTF-8">
+		<title>Netflix</title>
+		<link rel="shortcut icon" href="imgs/nficon2016.ico" />
+		<style>
+		 *{
+		   box-sizing: border-box;  
+		 }
+		 
+		 
+	  	body{
+	  	 background-color: black;
+	  	 color: white;
+		   margin: 0;
+		   font-family: sans-serif;
+		 	}
+		  
+		  
+		  header{
+		    position: absolute;
+		    width: 100%;
+		  }
+		  
+		  
+		  header > img{
+		    width: 14%;
+		    margin: 35px;
+		  }
+		  
+		  header > select{
+		   background-color: transparent;
+		   color: white;
+		   float: right;
+		   padding: 10px;
+		   margin-top: 3%;
+		  }
+		  header > button{
+		    border: none;
+		    background-color: red;
+		    color: white;
+		    float: right;
+		    padding: 10px;
+		    margin-top: 3%;
+		    margin-right: 2%;
+		  }
+		  
+		  
+		  div#central{
+		    display: inline-block;
+		    width: 100%;
+		    padding: 20%;
+		    background: url(imgs/BR-pt-20211108-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+		    background-size: 980px 705px;
+		    box-shadow: inset 0 0 9.9em 1.9em black;
+		    font-size: 20px;
+		    text-align: center;
+		    justify-content: center;
+		    white-space: nowrap;
+		    border-bottom: 5px solid gray;
+		  }
+		  
+		  
+		 div#central > h1{
+		   display: flex;
+		   font-size: 45px;
+		  }
+		  
+		  
+		 input#email{
+		   height: 50px;
+		   width: 300px;
+		 }
+		 button#submit{
+		   background-color: red;
+		   color: white;
+		   border: none;
+		   height: 50px;
+		   width: 150px;
+		 }
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		 
+		 
+		 div#tv{
+		   box-shadow: 0 0 10em black;
+		   padding-top: 30px;
+		   height: 300px;
+		   background-color: black;
+		 }
+		 
+		 div#tv > h1{
+		   margin: 30px; 
+		 }
+		 
+		 div#tv > p{
+		   width: 270px;
+		   margin: 30px;
+		 }
+		 div#tv > img{
+		   position: absolute;
+		   margin-left: 60%;
+		   margin-top: -20%;
+		   height: 240px;
+		 }
+		 div#tv > video{
+		   position: absolute;
+		   margin-left: 65%;
+		   margin-top: -17%;
+		 }
+		</style>
+	</head>
+<body>
+  <header>
+   <img src="imgs/logo.png" alt="logo da netflix" />
+    <select name="idioma" id="idioma">
+      <option value="português">português</option>
+      <option value="inglês">inglês</option>
+    </select>
+    <button type="submit">Entrar</button>
+  </header>
+  <div id="central">
+    <h1>Filmes, séries e muito mais. <br>Sem limites.</h1>
+    <h3>Assista aonde quiser. Cancele quando quiser.</h3>
+    <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura</p>
+    <form id="form">
+    <input placeholder="Email" type="email" id="email" required>
+    <button type="submit" id="submit">Vamos lá</button>
+  </form>
+  </div>
+  <div id="tv">
+    <h1>Aproveite na TV.</h1>
+    <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
+    
+    <img src="imgs/tv.png" alt="Tv" />
+    <video width="230" height="170" autoplay>
+      <source src="imgs/video1.m4v" type="video/mp4" type="video/mp4">
+  </div>
+ 
+</body>
+</html>
