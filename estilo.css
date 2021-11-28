@@ -274,6 +274,7 @@
         list-style-type: none;
         margin: 0; 
         white-space: pre-line;
+        font-size: 14px;
       }
       
       li{
@@ -288,7 +289,7 @@
       div#Parte-de-baixo{
         display: inline-block;
         margin-top: 1.5%;
-        margin-left: 5%;
+        margin-left: 16.5%;
       }
       
       div#Parte-de-baixo > p{
