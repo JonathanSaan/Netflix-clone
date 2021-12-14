@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+<head>
 		<meta charset="UTF-8">
 		<title>Netflix</title>
 		<link rel="shortcut icon" href="imgs/nficon2016.ico" />
 		<link rel="stylesheet" href="estilo.css"/>
-  </head>
+		<title>Filmes, séries e muito mais. Sem limites. - Netflix</title>
+</head>
 <body>
   <header>
-   <img src="logo.png" alt="logo da netflix" />
+   <img src="imgs/logo.png" alt="logo da netflix" />
    <form id="botoes">
       <select name="idioma" id="idioma">
         <option value="português">português</option>
@@ -18,9 +19,9 @@
    </form>
   </header>
   <div id="central">
-    <h1>Filmes, séries e muito mais. <br>Sem limites.</h1>
-    <h3>Assista aonde quiser. Cancele quando quiser.</h3>
-    <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura</p>
+    <h1>Filmes, séries e muito mais. Sem limites.</h1> 
+    <p id="p">Assista aonde quiser. Cancele quando quiser.</p> 
+    <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p> <br />
     <form id="form">
         <input placeholder="Email" type="email" id="email" required>
         <button type="submit" id="submit">Vamos lá</button>
@@ -32,18 +33,18 @@
         <p>Assista em Smart TVs, PlayStation,<br> Xbox, Chromecast, Apple TV,<br> aparelhos de Blu-ray e outros<br> dispositivos.</p>
     </main>
     <div class="videos" id="primeiro-video">
-        <img id="borda-da-tv" src="tv.png" alt="Tv" />
+        <img id="borda-da-tv" src="imgs/tv.png" alt="Tv" />
         <video width="240" height="160" autoplay playline muted loop>
-          <source src="video1.m4v" type="video/mp4" type="video/mp4">
+          <source src="imgs/video1.m4v" type="video/mp4" type="video/mp4">
         </video>
     </div>
   </div>
   <div id="donwload">
-    <img src="mobile-0819.jpg" alt="Celular com Strange Things" />
+    <img src="imgs/mobile-0819.jpg" alt="Celular com Strange Things" />
     <div id="Strange-Things">
-         <img src="boxshot.png" alt="Imagem do Strange Things" />
+         <img align="left" src="imgs/boxshot.png" alt="Imagem do Strange Things" />
          <h4>Strange Things</h4>
-         <p>Download em andamento</p>
+         <p>Download em <br /> andamento...</p>
     </div>
     <main class="paragrafo">
         <h1>Baixe séries para<br> assistir offline.</h1>
@@ -56,14 +57,14 @@
         <p>Assista no celular, tablet, Smart TV <br>ou notebook sem pagar a mais por<br> isso.</p>
     </main>
     <div class="videos" id="segundo-video">
-       <img id="borda-do-monitor" src="device-pile.png" alt="Um monitor e dois celulares" />
+       <img id="borda-do-monitor" src="imgs/device-pile.png" alt="Um monitor e dois celulares" />
        <video width="225" height="135" autoplay playline muted loop>
-        <source src="video2.m4v" type="video/mp4" type="video/mp4" />
+        <source src="imgs/video2.m4v" type="video/mp4" type="video/mp4" />
       </video>
    </div>
   </div>
   <div id="perfil">
-    <img src="AAAABUb4fcnETtielPJer_ORwZ2iUanycANl37cr81zDaXC9Fmg9c42ofxt0yxetNltG2xUMgf2Aqimz_q1Nsv-38Ng_EjIc.png" alt="Duas crianças e um coelho" />
+    <img src="imgs/AAAABUb4fcnETtielPJer_ORwZ2iUanycANl37cr81zDaXC9Fmg9c42ofxt0yxetNltG2xUMgf2Aqimz_q1Nsv-38Ng_EjIc.png" alt="Duas crianças e um coelho" />
     <main class="paragrafo">
         <h1>Crie perfil para<br> crianças.</h1>
         <p>Deixe as crianças se aventurarem<br> com seus personagens favoritos em<br> um espaço feito só para elas, sem<br> pagar a mais por isso.</p>
@@ -103,7 +104,7 @@
         O recurso de controle dos pais, incluso nos perfis para crianças e protegido por PIN, permite restringir a classificação etária do conteúdo que as crianças podem ver e bloquear títulos específicos que você não quer que elas assistam.</small></p>
     </details>
     <br />
-    <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura</p>
+    <p id="msgAcimaForm">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
     <form id="form">
         <input placeholder="Email" type="email" id="email" required>
         <button type="submit" id="submit">Vamos lá</button>
@@ -111,7 +112,7 @@
   </article>
   <footer>
     <section>
-    <h3>Dúvidas? Ligue <a href="#"> #####-###-#### </a></h3>
+    <h5>Dúvidas? Ligue <a href="#"> #####-###-#### </a></h5>
     </section>
     <nav>
     <ul>
