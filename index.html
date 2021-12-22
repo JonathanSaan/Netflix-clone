@@ -5,108 +5,13 @@
   <meta name="description" content="A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e muito mais. Assista o quanto quiser, quando quiser." />
   <title>Originais Netflix | Site oficial da Netflix</title>
    <link rel="shortcut icon" href="imgs/nficon2016.ico">
-  <style>
-    body {
-      padding: 0;
-      margin: 0;
-      background-color: #181818;
-      color: white;
-      font-family: sans-serif;
-    }
-
-    header {
-      position: fixed;
-      width: 100%;
-      background-color: hsla(0,0%,0%,0.63);
-    }
-
-    header > img {
-      height: 37px;
-      margin: 1vw;
-    }
-
-    #botoes {
-      float: right;
-      margin-top: 1%;
-      margin-right: 6%;
-    }
-    
-    button > a{
-      color: white;
-      text-decoration: none;
-    }
-
-    #botoes > button:nth-child(1) {
-      text-transform: uppercase;
-      border: none;
-      border-radius: 3px;
-      background-color: red;
-      padding: 10px;
-    }
-
-    #botoes > button:nth-child(2) {
-      border: 1px solid gray;
-      border-radius: 3px;
-      background-color: transparent;
-      color: white;
-      padding: 10px;
-      margin-left: 10px;
-    }
-    
-
-    div#container {
-      display: inline-block;
-      align-items: center;
-      width: 950px;
-      margin-top: 55px;
-      margin-left: 18px;
-    }
-    
-    div#container >div:nth-child(1) {
-      max-width: 600px;
-    }
-
-    nav {
-      display: flex;
-      width: 97%;
-      overflow-x: auto;
-      overflow-y: hidden; 
-    }
-
-    ::-webkit-scrollbar {
-      display: none;
-    }
-    
-    nav > span {
-      text-align: center;
-      margin-right: 10px;
-    }
-    
-    span > a{
-      color: white;
-      text-decoration: none;
-    }
-
-@media(max-width: 900px) {
-       div#container {
-          width: 95%;
-       }
-       nav{
-         font-size: 14px;
-       }
-
-        span > img {
-          height: 22vw;
-        }
-
-    }
-  </style>
+   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
     <img src="imgs/nficon2016.ico" alt="logo da netflix" />
     <form id="botoes">
-      <button id type="submit"><a href="assine a netflix/netflix.html">assine a Netflix</a></button>
+      <button id type="submit"><a href="assine a netflix/index.html">assine a Netflix</a></button>
       <button type="submit">Entrar</button>
     </form>
   </header>
