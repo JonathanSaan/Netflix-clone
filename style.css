@@ -8,6 +8,7 @@ body {
 
 header {
   position: fixed;
+  z-index: 1;
   width: 100%;
   background-color: hsla(0,0%,0%,0.63);
 }
@@ -160,6 +161,6 @@ form > select#idioma {
   }
   ul {
     width: 40%;
-    margin-left: -8px;
+    margin-left: -2%;
   }
 }
