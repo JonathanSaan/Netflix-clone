@@ -80,25 +80,59 @@ p#msgAcimaForm {
   margin-bottom: 30px;
 }
 
-form#form {
+form.form {
   display: flex;
   margin-top: -20px;
   justify-content: center;
 }
 
-input#email {
-  border: none;
+input {
+  border: 1px solid gray;
+  border-radius: 2px;
   padding: 0px 10px;
   height: 50px;
   width: 320px;
 }
 
-input::placeholder {
-  padding-left: -5px;
+label {
+  position: absolute;
+  margin-top: .9em;
+  margin-left: -23em;
+  font-size: 17px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: gray;
+}
+
+input:invalid {
+  border-bottom: 2px solid  #ffaa00;
+}
+
+input:focus {
+  border: 1.5px solid blue;
+}
+
+input:valid {
+  border: 1.5px solid green;
+}
+
+input:focus ~ label, input:valid ~ label {
+  transform: translateY(-20px);
+  margin-top: 1.7em;
+  margin-right: 5.5em;
+  font-size: 14px;
+}
+
+span {
+  position: absolute;
+  margin-top: 55px;
+  margin-left: -20em;
+  font-size: 15px;
+  color: #ffaa00;
 }
 
 button#submit {
-  position: inline-block;
+  position: inline;
   background-color: red;
   color: white;
   border: none;
@@ -348,12 +382,25 @@ div#Parte-de-baixo > p {
     white-space: normal;
     width: 240px;
   }
-  form#form {
+  form.form {
     align-items: center;
     flex-direction: column;
   }
+  label {
+    margin-top: -5em;
+    margin-left: -15em;
+  }
+  input:focus ~ label, input:valid ~ label {
+    margin-top: -5em;
+    margin-right: 4em;
+  }
+  span {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: -10.5em;
+  }
   button#submit {
-    margin-top: 20px;
+    margin-top: 30px;
   }
   div#tv {
     display: flex;
