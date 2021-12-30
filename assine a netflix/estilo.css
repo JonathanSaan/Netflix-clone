@@ -119,14 +119,6 @@ input:focus ~ label, input:valid ~ label {
   font-size: 14px;
 }
 
-span {
-  position: absolute;
-  margin-top: 55px;
-  margin-left: -20em;
-  font-size: 15px;
-  color: #ffaa00;
-}
-
 button#submit {
   position: inline;
   background-color: red;
@@ -389,11 +381,6 @@ div#Parte-de-baixo > p {
   input:focus ~ label, input:valid ~ label {
     margin-top: -5em;
     margin-right: 4em;
-  }
-  span {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: -10.5em;
   }
   button#submit {
     margin-top: 30px;
