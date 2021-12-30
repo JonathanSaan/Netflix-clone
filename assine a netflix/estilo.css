@@ -104,10 +104,6 @@ label {
   color: gray;
 }
 
-input:invalid {
-  border-bottom: 2px solid  #ffaa00;
-}
-
 input:focus {
   border: 1.5px solid blue;
 }
