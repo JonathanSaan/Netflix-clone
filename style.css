@@ -49,9 +49,9 @@ button.assine {
 div#container {
   display: inline-block;
   align-items: center;
-  width: 950px;
+  width: 90%;
   margin-top: 55px;
-  margin-left: 18px;
+  margin-left: 5%;
 }
 
 div#container >div:nth-child(1) {
@@ -65,7 +65,7 @@ h1 {
 
 nav {
   display: flex;
-  width: 97%;
+  max-width: 95%;
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -81,6 +81,7 @@ nav {
 
 nav > span {
   text-align: center;
+  width: 19em;
   margin-right: 10px;
 }
 
@@ -97,7 +98,8 @@ aside {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  font-size: 19px;
+  font-size: 23px;
+  width: 85vw;
   max-width: 780px;
 }
 
@@ -153,11 +155,6 @@ form > select#idioma {
   }
   span > img {
     height: 22vw;
-  }
-  aside {
-    margin-left: 13px;
-    font-size: 23px;
-    width: 300px;
   }
   ul {
     width: 40%;
