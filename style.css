@@ -128,8 +128,9 @@ div#short {
 ul {
   display: flex;
   flex-direction: column;
+  font-size: 14px;
   padding: 10px;
-  width: 200px;
+  width: 20%;
 }
 
 li {
