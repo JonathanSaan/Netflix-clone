@@ -29,7 +29,7 @@ header > img {
   border-radius: 3px;
   background-color: transparent;
   color: white;
-  padding: 10px;
+  padding: 5px 5px 5px 20px;
 }
 
 #botoes > button {
@@ -40,6 +40,12 @@ header > img {
   float: right;
   margin-left: 10%;
   padding: 10px;
+}
+
+img.global {
+  height: 15px;
+  margin-top: 7%;
+  margin-right: -22px;
 }
 /*--------primeiro div--------  */
 
@@ -87,8 +93,10 @@ form.form {
 }
 
 input {
-  border: 1px solid gray;
-  border-radius: 2px;
+  outline: none;
+  border: none;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
   padding: 0px 10px;
   height: 50px;
   width: 320px;
@@ -105,14 +113,14 @@ label {
 }
 
 input:focus {
-  border: 1.5px solid blue;
+  border: 1px solid blue;
 }
 
 input:valid {
-  border: 1.5px solid green;
+  border: 1px solid green;
 }
 
-input:focus ~ label, input:valid ~ label {
+input:focus + label, input:valid + label {
   transform: translateY(-20px);
   margin-top: 1.7em;
   margin-right: 5.5em;
@@ -124,7 +132,8 @@ button#submit {
   background-color: red;
   color: white;
   border: none;
-  border-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
   height: 50px;
   width: 10em;
 }
@@ -290,10 +299,6 @@ details summary:after {
   transition: 200ms linear;
 }
 
-details summary {
-  outline: 0;
-}
-
 details[open] summary:after {
   transform: rotate(50deg);
   font-size: 2.5rem;
@@ -302,30 +307,32 @@ details[open] summary:after {
 footer {
   border-top: 6px solid #222222;
   margin-top: 30px;
-  height: 100px;
   color: #4F4F4F;
 }
 
 footer > section {
-  font-size: 3vw;
-  margin-left: 13%;
+  margin-left: 6%;
   margin-bottom: -20px;
 }
 
 footer > nav {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 5%;
 }
 
 ul {
-  list-style-type: none;
-  white-space: pre-line;
-  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  padding: 10px;
+  width: 200px;
 }
 
 li {
-  margin-top: 10px;
+  padding-top: 20px;
+  list-style-type: none;
+  width: 170px;
 }
 
 a {
@@ -336,7 +343,7 @@ a {
 div#Parte-de-baixo {
   display: inline-block;
   margin-top: 1.5%;
-  margin-left: 14.5%;
+  margin-left: 7%;
 }
 
 div#Parte-de-baixo > p {
@@ -374,6 +381,9 @@ div#Parte-de-baixo > p {
     align-items: center;
     flex-direction: column;
   }
+  input {
+    border-radius: 2px;
+  }
   label {
     margin-top: -5em;
     margin-left: -15em;
@@ -382,7 +392,9 @@ div#Parte-de-baixo > p {
     margin-top: -5em;
     margin-right: 4em;
   }
+
   button#submit {
+    border-radius: 2px;
     margin-top: 30px;
   }
   div#tv {
@@ -440,9 +452,10 @@ div#Parte-de-baixo > p {
   details > p {
     width: 300px;
   }
+  footer > nav {
+    margin-left: 2%;
+  }
   ul {
-    display: flex;
-    flex-direction: column;
-    font-size: 9px;
+    width: 49%;
   }
 }
