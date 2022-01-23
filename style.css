@@ -138,12 +138,18 @@ li {
   list-style-type: none;
 }
 
-form > select#idioma {
+form img#global {
+  height: 15px;
+  margin-bottom: -2px;
+  margin-right: -25px;
+}
+
+form select#idioma {
   margin-top: 50px;
   margin-bottom: 50px;
-  padding: 15px;
+  padding: 10px 0 10px 20px;
   border-radius: 3px;
-  background-color: black;
+  background-color: transparent;
   color: #696969;
 }
 
